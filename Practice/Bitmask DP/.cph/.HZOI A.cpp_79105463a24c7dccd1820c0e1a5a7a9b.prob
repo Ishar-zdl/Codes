@@ -1,0 +1,1 @@
+{"name":"Local: HZOI A","url":"e:\\codes\\Practice\\Bitmask DP\\HZOI A.cpp","tests":[{"id":1696599698551,"input":"2 1\n1 1","output":"1"},{"id":1696662519057,"input":"4 0","output":"24"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes\\Practice\\Bitmask DP\\HZOI A.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: HZOIG","url":"e:\\codes\\Practice\\Bitmask DP\\HZOIG. Disease Manangement.cpp","tests":[{"id":1696809946945,"input":"6 3 2\n0\n1 1\n1 2\n1 3\n2 2 1\n2 2 1","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes\\Practice\\Bitmask DP\\HZOIG. Disease Manangement.cpp","group":"local","local":true}

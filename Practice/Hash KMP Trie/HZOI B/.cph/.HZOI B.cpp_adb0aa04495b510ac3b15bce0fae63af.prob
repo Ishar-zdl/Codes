@@ -1,0 +1,1 @@
+{"name":"Local: HZOI B","url":"e:\\codes\\codes\\Practice\\Hash KMP Trie\\HZOI B\\HZOI B.cpp","tests":[{"id":1697425115047,"input":"3 8\nAATCCCAT\nACTTGCAA\nGGTCGCAA\nACTCCCAG\nACTCGCAT\nACTTCCAT","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes\\codes\\Practice\\Hash KMP Trie\\HZOI B\\HZOI B.cpp","group":"local","local":true}

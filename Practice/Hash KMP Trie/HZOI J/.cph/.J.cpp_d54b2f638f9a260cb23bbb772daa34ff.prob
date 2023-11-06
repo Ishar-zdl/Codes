@@ -1,0 +1,1 @@
+{"name":"Local: J","url":"e:\\codes-1\\Practice\\Hash KMP Trie\\HZOI J\\J.cpp","tests":[{"id":1698634624070,"input":"9 6 10\n5\n6\n2\n10\n10\n7\n3\n2\n9\n1\n4\n4\n3\n2\n1","output":"1\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes-1\\Practice\\Hash KMP Trie\\HZOI J\\J.cpp","group":"local","local":true}

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>提交记录 #505807 - Zhengrui Online Judge</title>
+		
+		<script type="text/javascript">uojHome = 'http://zhengruioi.com'</script>
+
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="http://zhengruioi.com/css/bootstrap.min.css?v=2015.5.31" />		<!-- Bootstrap theme -->
+		<link type="text/css" rel="stylesheet" href="http://zhengruioi.com/css/bootstrap-theme.min.css?v=2015.5.31" />
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="http://zhengruioi.com/css/uoj-theme.css?v=2.33" />		
+		<!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+		<script src="http://zhengruioi.com/js/jquery.min.js"></script>		
+		<!-- jQuery autosize -->
+		<script src="http://zhengruioi.com/js/jquery.autosize.min.js"></script>		<script type="text/javascript">
+			$(document).ready(function() {
+				$('textarea').autosize();
+			});
+		</script>
+		
+		<!-- jQuery cookie -->
+		<script src="http://zhengruioi.com/js/jquery.cookie.min.js"></script>		
+		<!-- jQuery modal -->
+		<script src="http://zhengruioi.com/js/jquery.modal.js"></script>		
+		<!-- jQuery tag canvas -->
+				
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://zhengruioi.com/js/bootstrap.min.js?v=2015.5.31"></script>		
+		<!-- Color converter -->
+		<script src="http://zhengruioi.com/js/color-converter.min.js"></script>		
+		<!-- uoj -->
+		<script src="http://zhengruioi.com/js/uoj.js?v=2016.8.15"></script>		
+		<!-- LAB -->
+		<script src="http://zhengruioi.com/js/LAB.min.js"></script>
+		<!-- UOJ ico -->
+		<link rel="shortcut icon" href="http://zhengruioi.com/pictures/UOJ.ico" />
+		
+				
+				
+		<link type="text/css" rel="stylesheet" href="http://zhengruioi.com/css/sweetalert.min.css" />		<script src="http://zhengruioi.com/js/sweetalert.min.js"></script>
+				
+				
+				
+				
+				
+		
+				
+				
+				
+				
+				<!-- shjs -->
+		<link type="text/css" rel="stylesheet" href="http://zhengruioi.com/css/sh_typical.min.css" />		<script src="http://zhengruioi.com/js/sh_main.min.js"></script>		<script type="text/javascript">$(document).ready(function(){sh_highlightDocument()})</script>
+				
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+		before_window_unload_message = null;
+		$(window).on('beforeunload', function() {
+			if (before_window_unload_message !== null) {
+			    return before_window_unload_message;
+			}
+		});
+		</script>
+		
+			</head>
+	<body role="document">
+		<div class="container theme-showcase" role="main">
+						
+			
+			<div class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://zhengruioi.com">ZROI</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/contests">比赛</a></li>
+				<li><a href="/problems">题库</a></li>
+				<li><a href="/submissions">提交记录</a></li>
+				<li><a href="/hacks">Hack!</a></li>
+				<li><a href="/blogs">博客</a></li>
+				<li><a href="/faq">帮助</a></li>
+				<li><a href="/rollkings">卷王榜</a></li>
+<!--                <li><a href="/rollkings">--><?//= UOJLocale::get('roll kings nav') ?><!--</a></li>-->
+									<li><a data-target="#switchModal" href="#" data-toggle="modal">切换</a></li>
+					<div class="modal fade in" id="switchModal" tabindex="-1" aria-labelledby="switchModalLabel" aria-hidden="true" style="display: none;">
+						<div class="modal-dialog" style="width: 400px;">
+							<div class="modal-content">
+								<div class="modal-header" style="height: 51px;">
+									<h4 class="modal-title" id="switchModalLabel" style="float:left">权限选择</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right">
+									<span aria-hidden="true">×</span>
+									</button>
+								</div>
+								<form name="switchChooseForm" method="post">
+									<input type="hidden" name="switchChooseFormHiddenInput" id="switchChooseFormHiddenInput" value="switch">
+									<div class="modal-body">
+										<div class="table-responsive">
+											<table class="table table-bordered table-hover table-striped table-text-center">
+												<thead><tr>
+													<th><label style="margin-bottom: 2px;">
+														<input type="checkbox" style="vertical-align: middle;margin-top: 0px;" id="switchChooseAll"><span style="vertical-align: middle"> 全选</span>
+													</label></th>
+													<th style="vertical-align: middle">团队名称</th>
+												</tr></thead>
+												<tbody>
+													<tr><td><input id="switchCheckbox17" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="17"></td><td>海亮福三中省选10连测专属</td></tr><tr><td><input id="switchCheckbox16" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="16"></td><td>19年省选十连测</td></tr><tr><td><input id="switchCheckbox30" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="30"></td><td>正睿肯竞2019暑期峰会AB组	</td></tr><tr><td><input id="switchCheckbox32" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="32"></td><td>19提高10连</td></tr><tr><td><input id="switchCheckbox39" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="39"></td><td>19秋季海亮专属</td></tr><tr><td><input id="switchCheckbox33" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="33"></td><td>19普转提7连</td></tr><tr><td><input id="switchCheckbox40" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="40"></td><td>19 csp-s 线上冲刺</td></tr><tr><td><input id="switchCheckbox48" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="48"></td><td>2020寒假省选</td></tr><tr><td><input id="switchCheckbox50" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="50"></td><td>20 三月省选集训</td></tr><tr><td><input id="switchCheckbox52" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="52"></td><td>2020 五一线上集训</td></tr><tr><td><input id="switchCheckbox58" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="58"></td><td>20秋季提高10连测</td></tr><tr><td><input id="switchCheckbox60" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="60"></td><td>20秋季普转提7连</td></tr><tr><td><input id="switchCheckbox61" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="61"></td><td>20普及5连</td></tr><tr><td><input id="switchCheckbox64" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="64"></td><td>20联赛前冲刺</td></tr><tr><td><input id="switchCheckbox76" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="76"></td><td>21NOI赛前高端峰会</td></tr><tr><td><input id="switchCheckbox77" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="77"></td><td>21暑期峰会cd组</td></tr><tr><td><input id="switchCheckbox78" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="78"></td><td>21暑期峰会ab组	</td></tr><tr><td><input id="switchCheckbox79" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="79"></td><td>21秋季csp7连</td></tr><tr><td><input id="switchCheckbox80" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="80"></td><td>21noip10连</td></tr><tr><td><input id="switchCheckbox81" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="81"></td><td>21秋季noip赛前冲刺</td></tr><tr><td><input id="switchCheckbox89" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="89"></td><td>22省选10连测</td></tr><tr><td><input id="switchCheckbox90" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="90"></td><td>22省选第一轮集训</td></tr><tr><td><input id="switchCheckbox92" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="92"></td><td>22省选第二轮集训</td></tr><tr><td><input id="switchCheckbox95" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="95"></td><td>22NOI赛前集训</td></tr><tr><td><input id="switchCheckbox99" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="99"></td><td>22暑期AB集训</td></tr><tr><td><input id="switchCheckbox103" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="103"></td><td>22noip赛前20天</td></tr><tr><td><input id="switchCheckbox102" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="102"></td><td>22noip10连</td></tr><tr><td><input id="switchCheckbox106" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="106"></td><td>23省选10连</td></tr><tr><td><input id="switchCheckbox107" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="107"></td><td>23省选第一轮集训</td></tr><tr><td><input id="switchCheckbox108" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="108"></td><td>23省选第二轮集训</td></tr><tr><td><input id="switchCheckbox111" type="checkbox" checked="" style="width:100%" name="switchCheckbox[]" value="111"></td><td> </td></tr>													
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+										<button type="submit" class="btn btn-primary">确认</button>
+									</div>
+								</form>
+								<script type="text/javascript">
+									$("#switchChooseAll").click(function() {
+										if (this.checked) {
+											$("#switchCheckbox17").prop("checked", true);$("#switchCheckbox16").prop("checked", true);$("#switchCheckbox30").prop("checked", true);$("#switchCheckbox32").prop("checked", true);$("#switchCheckbox39").prop("checked", true);$("#switchCheckbox33").prop("checked", true);$("#switchCheckbox40").prop("checked", true);$("#switchCheckbox48").prop("checked", true);$("#switchCheckbox50").prop("checked", true);$("#switchCheckbox52").prop("checked", true);$("#switchCheckbox58").prop("checked", true);$("#switchCheckbox60").prop("checked", true);$("#switchCheckbox61").prop("checked", true);$("#switchCheckbox64").prop("checked", true);$("#switchCheckbox76").prop("checked", true);$("#switchCheckbox77").prop("checked", true);$("#switchCheckbox78").prop("checked", true);$("#switchCheckbox79").prop("checked", true);$("#switchCheckbox80").prop("checked", true);$("#switchCheckbox81").prop("checked", true);$("#switchCheckbox89").prop("checked", true);$("#switchCheckbox90").prop("checked", true);$("#switchCheckbox92").prop("checked", true);$("#switchCheckbox95").prop("checked", true);$("#switchCheckbox99").prop("checked", true);$("#switchCheckbox103").prop("checked", true);$("#switchCheckbox102").prop("checked", true);$("#switchCheckbox106").prop("checked", true);$("#switchCheckbox107").prop("checked", true);$("#switchCheckbox108").prop("checked", true);$("#switchCheckbox111").prop("checked", true);										} else {
+											$("#switchCheckbox17").prop("checked", false);$("#switchCheckbox16").prop("checked", false);$("#switchCheckbox30").prop("checked", false);$("#switchCheckbox32").prop("checked", false);$("#switchCheckbox39").prop("checked", false);$("#switchCheckbox33").prop("checked", false);$("#switchCheckbox40").prop("checked", false);$("#switchCheckbox48").prop("checked", false);$("#switchCheckbox50").prop("checked", false);$("#switchCheckbox52").prop("checked", false);$("#switchCheckbox58").prop("checked", false);$("#switchCheckbox60").prop("checked", false);$("#switchCheckbox61").prop("checked", false);$("#switchCheckbox64").prop("checked", false);$("#switchCheckbox76").prop("checked", false);$("#switchCheckbox77").prop("checked", false);$("#switchCheckbox78").prop("checked", false);$("#switchCheckbox79").prop("checked", false);$("#switchCheckbox80").prop("checked", false);$("#switchCheckbox81").prop("checked", false);$("#switchCheckbox89").prop("checked", false);$("#switchCheckbox90").prop("checked", false);$("#switchCheckbox92").prop("checked", false);$("#switchCheckbox95").prop("checked", false);$("#switchCheckbox99").prop("checked", false);$("#switchCheckbox103").prop("checked", false);$("#switchCheckbox102").prop("checked", false);$("#switchCheckbox106").prop("checked", false);$("#switchCheckbox107").prop("checked", false);$("#switchCheckbox108").prop("checked", false);$("#switchCheckbox111").prop("checked", false);										}
+									})
+								</script>
+							</div>
+						</div>
+					</div>
+							</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</div>
+<script type="text/javascript">
+function swalConfirm(text) {
+	return swal({
+		html : text,
+		type : 'warning',
+		showCancelButton : true,
+		allowOutsideClick : false,
+		confirmButtonText : 'Yes',
+		cancelButtonText : 'No',
+		focusCancel : true
+	});
+}
+
+function switchTo(id) {
+	swalConfirm('您确定要切换到 <strong>' + $('#team-name-' + id).text() + '</strong> 吗？')
+	.then(function() {
+		$.post('/', {
+			id : id,
+			type : 'switch'
+		}, function(msg) {
+			if (msg == 'ok') {
+				swal('', '成功切换到 <strong>' + $('#team-name-' + id).text() + '</strong> 啦', 'success')
+				.then(function() {
+					window.location.reload();
+				});
+			} else swal('', '切换失败，如有疑问请联系蔡老师', 'error');
+		});
+	});
+}
+</script>
+						
+			<div class="uoj-content">
+<div class="table-responsive"><table class="table table-bordered table-text-center"><thead><tr><th>ID</th><th>题目</th><th>提交者</th><th>结果</th><th>用时</th><th>内存</th><th>语言</th><th>文件大小</th><th>提交时间</th><th>测评时间</th></tr></thead><tbody><tr><td><a href="/submission/505807">#505807</a></td><td><a href="/contest/1243/problem/2350">#2350. noip十连测day2-t2</a></td><td><span class="uoj-username" data-rating="2406">chenshi028</span></td><td><a href="/submission/505807" class="uoj-score">100</a></td><td>422ms</td><td>4040kb</td><td><a href="/submission/505807">C++</a></td><td>902b</td><td><small>2022-09-04 10:20:58</small></td><td><small>2022-09-04 13:22:36</small></td></tr></tbody></table></div>
+	<div class="panel panel-info"><div class="panel-heading"><h4 class="panel-title">answer</h4></div><div class="panel-body"><pre><code class="sh_cpp">#include&lt;cstdio&gt;
+using namespace std;
+const int o=2e5+10,MOD=1e9+7;
+inline int qp(int b,int f){int res=1;for(;f;f&gt;&gt;=1,b=b*1ll*b%MOD) if(f&amp;1) res=res*1ll*b%MOD;return res;}
+int T,n,m,K,X[o],Y[o],inv[o],pre[o],suf[o],ans;
+int main(){
+	for(scanf(&quot;%d&quot;,&amp;T);T--;printf(&quot;%d\n&quot;,(ans+MOD)%MOD),ans=0){
+		scanf(&quot;%d%d%d&quot;,&amp;n,&amp;m,&amp;K);
+		for(int i=0;i&lt;=n+m+1;++i)
+			X[i]=i,Y[i+1]=(Y[i]+qp(i+1,n+m)-qp(i,n)*1ll*qp(i+1,m)%MOD-qp(i,m)*1ll*qp(i+1,n)%MOD+qp(i,n+m))%MOD;
+		inv[1]=1;
+		for(int i=2;i&lt;=n+m+1;++i) inv[i]=MOD-MOD/i*1ll*inv[MOD%i]%MOD;
+		for(int i=inv[0]=1;i&lt;=n+m+1;++i) inv[i]=inv[i]*1ll*inv[i-1]%MOD;
+		for(int i=pre[0]=1;i&lt;=n+m+1;++i) pre[i]=pre[i-1]*1ll*(K-X[i-1])%MOD;
+		suf[n+m+2]=1;
+		for(int i=n+m+1;i;--i) suf[i]=suf[i+1]*1ll*(K-X[i])%MOD;
+		for(int i=0;i&lt;=n+m+1;++i)
+			ans=(ans+Y[i]*1ll*pre[i]%MOD*suf[i+1]%MOD*inv[i]%MOD*inv[n+m+1-i]*(((n+m+1-i)&amp;1)?-1:1))%MOD; 
+	}
+	return 0;
+}
+</code></pre></div><div class="panel-footer">源文件, 语言: C++</div></div>	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h4 class="panel-title">详细</h4>
+		</div>
+		<div class="panel-body">
+			<div class="panel-group" id="details_details_accordion"><div class="text-right text-muted">小提示：点击横条可展开更详细的信息</div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_1"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #1: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 0ms</div><div class="col-sm-3">memory: 524kb</div></div></div><div id="details_details_accordion_collapse_test_1" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+1 1 1
+2 2 2
+1 3 3
+3 2 2
+3 2 3
+3 3 1
+1 3 2
+1 2 2
+1 2 3
+3 3 3
+2 2 2
+2 3 2
+3 1 3
+3 1 1
+3 3 1
+3 3 3...
+</pre>
+<h4>output:</h4><pre>
+1
+10
+27
+22
+117
+1
+8
+4
+9
+411
+10
+22
+27
+1
+1
+411
+22
+411
+10
+27
+1
+50
+1
+35
+1
+27
+1
+1
+3
+27
+3
+1
+4
+1
+1
+3
+411
+117...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_2"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #2: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 0ms</div><div class="col-sm-3">memory: 524kb</div></div></div><div id="details_details_accordion_collapse_test_2" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+1 2 2
+1 1 1
+2 1 1
+2 2 1
+2 2 3
+1 3 3
+3 1 3
+3 3 3
+2 3 1
+1 3 2
+1 1 3
+2 3 3
+3 1 3
+2 2 3
+2 1 1
+1 3 3...
+</pre>
+<h4>output:</h4><pre>
+4
+1
+1
+1
+35
+27
+27
+411
+1
+8
+3
+117
+27
+35
+1
+27
+9
+1
+1
+35
+1
+1
+2
+8
+8
+1
+9
+1
+4
+8
+50
+1
+9
+8
+1
+1
+22
+8
+117
+1
+411
+8...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_3"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #3: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 2ms</div><div class="col-sm-3">memory: 524kb</div></div></div><div id="details_details_accordion_collapse_test_3" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+3 10 10
+4 10 5
+4 7 2
+4 2 9
+2 3 8
+1 10 7
+7 10 10
+6 6 4
+1 10 10
+7 2 10
+4 2 9
+4 6 1
+1 6 3
+10 8 10
+...
+</pre>
+<h4>output:</h4><pre>
+814065065
+393545256
+1906
+93993
+6112
+282475249
+387101746
+11782884
+999999937
+173839150
+93993
+1
+729
+259...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_4"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #4: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 0ms</div><div class="col-sm-3">memory: 524kb</div></div></div><div id="details_details_accordion_collapse_test_4" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+9 10 3
+5 10 7
+5 2 9
+9 2 6
+8 4 4
+4 4 10
+2 1 8
+8 7 3
+4 7 10
+9 2 10
+5 2 5
+7 4 4
+10 8 3
+4 8 2
+1 6 5...
+</pre>
+<h4>output:</h4><pre>
+112920022
+871800676
+880281
+106383726
+10734276
+22618474
+64
+13014381
+482179141
+851389911
+25525
+2620216...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_5"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #5: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 0ms</div><div class="col-sm-3">memory: 552kb</div></div></div><div id="details_details_accordion_collapse_test_5" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+100
+900 900 2000
+3 9 946
+9 7 1739
+7 7 1673
+1 5 1165
+3 1 890
+8 9 633
+4 5 827
+10 4 1373
+9 9 619
+4 9 17...
+</pre>
+<h4>output:</h4><pre>
+801889509
+37619301
+96493910
+283961148
+536206132
+704969000
+148044254
+97542011
+739607452
+202927290
+883...
+</pre>
+<h4>result:</h4><pre>
+ok 100 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_6"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #6: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 0ms</div><div class="col-sm-3">memory: 556kb</div></div></div><div id="details_details_accordion_collapse_test_6" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+100
+1000 1000 2000
+1 9 273
+2 7 1071
+5 10 1764
+7 6 1850
+1 6 743
+5 2 913
+6 3 1383
+9 9 1676
+8 3 274
+10 ...
+</pre>
+<h4>output:</h4><pre>
+227455600
+29914755
+184653084
+590628157
+877998281
+286483835
+521737074
+649210112
+72560803
+624322380
+27...
+</pre>
+<h4>result:</h4><pre>
+ok 100 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_7"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #7: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 106ms</div><div class="col-sm-3">memory: 4040kb</div></div></div><div id="details_details_accordion_collapse_test_7" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+90000 90000 100000
+3 1 16278
+7 5 80831
+1 9 27007
+7 5 8578
+8 2 69074
+5 4 86093
+9 6 38129
+1 3 930...
+</pre>
+<h4>output:</h4><pre>
+333976802
+235086761
+342709044
+139626138
+556717383
+807553275
+719442646
+735354825
+480587466
+857080776
+...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_8"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #8: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 105ms</div><div class="col-sm-3">memory: 4040kb</div></div></div><div id="details_details_accordion_collapse_test_8" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+90000 90000 100000
+10 1 9592
+8 3 27605
+1 6 26461
+8 3 29495
+5 10 83218
+3 4 63945
+3 10 32829
+3 5 ...
+</pre>
+<h4>output:</h4><pre>
+333976802
+460483945
+353183544
+185577417
+255845480
+393944215
+220356058
+614633961
+211980810
+996231067
+...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_9"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #9: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 104ms</div><div class="col-sm-3">memory: 4040kb</div></div></div><div id="details_details_accordion_collapse_test_9" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+90000 90000 100000000
+8 1 97811593
+5 6 72042514
+10 5 73643837
+10 6 55428128
+1 8 59030896
+2 6 44...
+</pre>
+<h4>output:</h4><pre>
+948953493
+915862037
+916662314
+647117399
+631185748
+772371792
+845703756
+592194730
+665137720
+145960021
+...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+<div class="panel panel-uoj-accepted"><div class="panel-heading" data-toggle="collapse" data-parent="#details_details_accordion" data-target="#details_details_accordion_collapse_test_10"><div class="row"><div class="col-sm-2"><h4 class="panel-title">Test #10: </h4></div><div class="col-sm-2">score: 10</div><div class="col-sm-2">Accepted</div><div class="col-sm-3">time: 105ms</div><div class="col-sm-3">memory: 4036kb</div></div></div><div id="details_details_accordion_collapse_test_10" class="panel-collapse collapse"><div class="panel-body">
+<h4>input:</h4><pre>
+1000
+90000 90000 100000000
+2 7 79602555
+1 2 15070839
+7 1 48895755
+10 3 14058456
+6 10 62418517
+2 10 8...
+</pre>
+<h4>output:</h4><pre>
+948953493
+557337587
+186574011
+373826544
+392970775
+129776289
+749600812
+274844476
+291471810
+575548107
+...
+</pre>
+<h4>result:</h4><pre>
+ok 1000 tokens
+
+</pre>
+</div></div></div>
+</div>					</div>
+	</div>
+
+
+			</div>
+						<div class="uoj-footer">
+				<p>
+					<a href="http://zhengruioi.com/submission/505807?locale=zh-cn"><img src="/pictures/lang/cn.png" alt="中文" /></a> 
+					<a href="http://zhengruioi.com/submission/505807?locale=en"><img src="/pictures/lang/gb.png" alt="English" /></a>
+				</p>
+				
+				<ul class="list-inline">
+					<li>Zhengrui Online Judge</li>
+									</ul>
+				
+				<p>Server time: 2023-04-07 11:34:58 &nbsp; | &nbsp;  <a href="http://www.beian.miit.gov.cn/">浙ICP备17047493号</a></p>
+			</div>
+					</div>
+		<!-- /container -->
+	</body>
+</html>

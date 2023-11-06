@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"e:\\codes\\Contest\\11.2 NOIP2023 9 30\\c\\c.cpp","tests":[{"id":1698994140922,"input":"5 3 2\n5 1 4 2 3","output":""},{"id":1698997879966,"input":"10 8 5\n8 8 5 9 0 5 0 6 5 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes\\Contest\\11.2 NOIP2023 9 30\\c\\c.cpp","group":"local","local":true}

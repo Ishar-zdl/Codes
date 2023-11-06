@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"e:\\codes\\Contest\\10.18 CSP模拟58联测20\\A\\A.cpp","tests":[{"id":1697589328784,"input":"3 3 3\n1 2 3\n2 1 3 2\n1 1 3 3\n2 1 3 2","output":"Yes\nNo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes\\Contest\\10.18 CSP模拟58联测20\\A\\A.cpp","group":"local","local":true}

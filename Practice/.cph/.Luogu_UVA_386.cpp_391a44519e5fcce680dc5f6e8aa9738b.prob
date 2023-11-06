@@ -1,0 +1,1 @@
+{"batch":{"id":"exlg","size":1},"name":"Luogu_UVA386","group":"Luogu","url":"https://www.luogu.com.cn/problem/UVA386","interactive":"false","memoryLimit":0,"timeLimit":3000,"tests":[],"input":{"type":"stdin"},"output":{"type":"stdout"},"language":{"java":{"mainClass":"Main","taskClass":"UVA386"}},"testType":"single","srcPath":"c:\\Users\\hzoi\\Desktop\\codes\\Luogu_UVA_386.cpp"}

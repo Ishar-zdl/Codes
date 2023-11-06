@@ -1,0 +1,1 @@
+{"name":"Local: HZOI C","url":"e:\\codes\\codes\\Practice\\Hash KMP Trie\\HZOI C\\HZOI C.cpp","tests":[{"id":1697425109558,"input":"2\nABC\n2  A AB\n2  C BC","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes\\codes\\Practice\\Hash KMP Trie\\HZOI C\\HZOI C.cpp","group":"local","local":true}

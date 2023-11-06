@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "8a17ab3b793602d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba9d3c6c18340f0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fb47da7ffb61c9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSP模拟赛/11.6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0deff60bc8dc95fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "16aae29623a5a06e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b977bedc95b6c49",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a8c74a0df9567e3b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "434f867626038b0a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "94592aaff9c1c1d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "86941c61bedbdd03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35ae2c6e215ac36a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CSP模拟赛/11.6.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7cfd661038f36ce7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CSP模拟赛/11.6.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ebb02f7017fe65b8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "395765685080997d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CSP模拟赛/11.6.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "4fb47da7ffb61c9c",
+  "lastOpenFiles": [
+    "容易忘的.md",
+    "回来吧，bobo.md",
+    "0D238C0D.jpg",
+    "0024C44A.png",
+    "CSP模拟赛/CSP模拟46 9.27.md",
+    "CSP模拟赛/10.19.md",
+    "学习笔记/倍增法.md",
+    "学习笔记/分块（待学习）.md",
+    "解题报告.md",
+    "挂分记录.md",
+    "未命名.md",
+    "未命名 1.md",
+    "暂存.md",
+    "做题思路.md",
+    "problem.md",
+    "statement.md",
+    "405_sol.md",
+    "学习笔记/树链剖分.md",
+    "学习笔记/LCA.md",
+    "学习笔记/状压DP.md",
+    "学习笔记/莫队（待学习）.md",
+    "学习笔记/基础数论 欧几里得定理及扩展 欧拉函数.md",
+    "061ACFD5.png",
+    "学习笔记/组合数学（待学习）.md",
+    "学习笔记/拉格朗日插值（待学习）.md",
+    "学习笔记/高斯消元（待学习）.md",
+    "学习笔记/线段树.md",
+    "学习笔记/tarjan（学一半）.md"
+  ]
+}

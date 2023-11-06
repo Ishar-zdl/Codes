@@ -1,0 +1,1 @@
+{"name":"Local: HZOI F","url":"e:\\codes\\codes\\Practice\\Multiplication\\HZOI F\\HZOI F.cpp","tests":[{"id":1697373939152,"input":"2\n2 2\n1 0\n0 1\n3 99999999\n1 2 3\n4 5 6\n7 8 9","output":"2\n2686"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\codes\\codes\\Practice\\Multiplication\\HZOI F\\HZOI F.cpp","group":"local","local":true}
