@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "容易忘的.md",
+                "file": "zc.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "容易忘的.md",
+                "file": "zc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "容易忘的.md",
+                "file": "zc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "容易忘的.md"
+                "file": "zc.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "4fb47da7ffb61c9c",
   "lastOpenFiles": [
-    "CSP模拟赛/11.6.md",
     "容易忘的.md",
+    "CSP模拟赛/11.6.md",
     "回来吧，bobo.md",
     "0D238C0D.jpg",
     "0024C44A.png",
