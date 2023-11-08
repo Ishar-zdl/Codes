@@ -1,0 +1,1 @@
+{"name":"Local: charlotte","url":"e:\\Codes-1\\Contest\\11.8 NOIP 14 35\\B\\charlotte.cpp","tests":[{"id":1699428370634,"input":"7\n0010101\n1 2\n2 3\n1 4\n4 5\n1 6\n6 7\n7\n0010101\n1 2\n2 3\n1 4\n4 5\n1 6\n6 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Codes-1\\Contest\\11.8 NOIP 14 35\\B\\charlotte.cpp","group":"local","local":true}
