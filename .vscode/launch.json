@@ -5,7 +5,11 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
+            "args": [
+                "-std=c++14",
+                "-O2",
+                "-stack=8192000"
+            ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
