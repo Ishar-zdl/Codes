@@ -1,0 +1,1 @@
+{"name":"Local: G","url":"e:\\Codes-1\\Practice\\Permutation and Combination\\HZOI G\\G.cpp","tests":[{"id":1699610179875,"input":"2\n1 4 5\n2 4 5","output":""},{"id":1699614004977,"input":"1\n75 57 70","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Codes-1\\Practice\\Permutation and Combination\\HZOI G\\G.cpp","group":"local","local":true}
