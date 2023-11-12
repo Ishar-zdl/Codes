@@ -33,9 +33,7 @@ main(){
     for(int i=1;i<=n;++i){
         int x=0,y=0,zc=M/c[i];
         exgcd(zc,c[i],x,y);
-        // ny=(x+c[i])%c[i];
         ny=(x<0?x+c[i]:x);
-        // std::cout<<zc<<' '<<c[i]<<' '<<ny<<'\n';
         ans=(ans+zc*a[i]%M*ny%M)%M;
     }
     printf("%lld",ans);
