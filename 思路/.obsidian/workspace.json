@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zc.md",
+                "file": "容易忘的.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zc.md",
+                "file": "容易忘的.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zc.md",
+                "file": "容易忘的.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zc.md"
+                "file": "容易忘的.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "4fb47da7ffb61c9c",
   "lastOpenFiles": [
+    "zc.md",
     "容易忘的.md",
     "CSP模拟赛/11.6.md",
     "回来吧，bobo.md",
@@ -175,7 +176,6 @@
     "学习笔记/组合数学（待学习）.md",
     "学习笔记/拉格朗日插值（待学习）.md",
     "学习笔记/高斯消元（待学习）.md",
-    "学习笔记/线段树.md",
-    "学习笔记/tarjan（学一半）.md"
+    "学习笔记/线段树.md"
   ]
 }
