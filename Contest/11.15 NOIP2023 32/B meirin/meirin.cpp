@@ -21,27 +21,20 @@ inline void CIN_sync(){
     #endif
 }
 const int N=5e5+5,mod=1e9+7;
-int a[N],b[N],n,q,sum_a[N],sum_b[N];
-inline void operation(int l,int r,int k){
-    int ans=0;
-    for(int i=l;i<=r;++i)b[i]=((b[i]+k)%mod+mod)%mod;
-    for(int i=1;i<=n;++i)sum_b[i]=((sum_b[i-1]+b[i])%mod+mod)%mod;
-    for(int i=1;i<=n;++i){
-        for(int j=i;j<=n;++j){
-            int A=((sum_a[j]-sum_a[i-1])%mod+mod)%mod;
-            int B=((sum_b[j]-sum_b[i-1])%mod+mod)%mod;
-            ans=((ans+A*B%mod)%mod+mod)%mod;
-        }
-    }
-    printf("%lld\n",ans);
-}
+int a[N],b[N],n,q,sum_a[N],back_a[N],p[N],sum_p[N],ans=0;
 main(){
     FRE
     n=read(),q=read();
-    for(int i=1;i<=n;++i)a[i]=read(),sum_a[i]=((sum_a[i-1]+a[i])%mod+mod)%mod;
-    for(int i=1;i<=n;++i)b[i]=read();
-    for(int i=1,l,r,k;i<=q;++i){
-        l=read(),r=read(),k=read();
-        operation(l,r,k);
-    }
+    for(int i=1;i<=n;++i)a[i]=read(),sum_a[i]=((sum_a[i-1]+a[i]*i)+mod)%mod;
+    for(int i=n;i;--i)back_a[i]=((back_a[i+1]+a[i]*(n-i+1))+mod)%mod;
+    for(int i=1;i<=n;++i)b[i]=read(),
+	p[i]=((p[i-1]-sum_a[i-1]+back_a[i])%mod+mod)%mod,
+	ans=((ans+p[i]*b[i]%mod)%mod+mod)%mod,sum_p[i]=(sum_p[i-1]+p[i]+mod)%mod;
+//	for(int i=1;i<=n;++i)std::cout<<p[i]<<' ';
+	std::cout<<'\n';
+    for(int i=1;i<=q;++i){
+    	int l=read(),r=read(),k=read();
+    	ans=((ans+(sum_p[r]+mod-sum_p[l-1])%mod*k%mod)%mod+mod)%mod;
+    	printf("%lld\n",ans);
+	}
 }
