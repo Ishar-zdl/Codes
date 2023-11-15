@@ -2,7 +2,7 @@
  * @Author: Ishar-zdl 
  * @Date: 2023-11-15 07:58:45 
  * @Last Modified by: Ishar-zdl
- * @Last Modified time: 2023-11-15 11:36:19
+ * @Last Modified time: 2023-11-15 21:47:02
  */
 #include<bits/stdc++.h>
 #define int long long
@@ -21,7 +21,7 @@ inline void CIN_sync(){
     #endif
 }
 const int N=1e6+10;
-int n,k,ans=0,zc,tot,w[N],xx,sum[N],f[N];
+int n,k,ans=0,zc,tot,w[N],xx,sum[N],f[N],jc=0;
 std::pair<int,int>a[N];
 main(){
     // FRE
@@ -41,8 +41,10 @@ main(){
     for(int i=pos-1;i;--i){
         // int pos=std::lower_bound(w+1,w+n+1,a[i].first+1)-w;
         int pos=f[i];
+        // std::cout<<pos<<'\n';
         int num=n-pos+1;
-        if(abs(sum[zc-1]-sum[i-1])<k*num)ans+=k*num+sum[zc-1]-sum[i-1],zc=i;
+        if(abs(a[i].first+jc)<=k*num)ans+=k*num+a[i].first+jc,zc=i,jc=0;
+        else jc+=num*k+a[i].first;
     }
     printf("%lld %lld\n",ans,n-zc+1);
     for(int i=zc;i<=n;++i)printf("%lld ",a[i].second);
@@ -50,6 +52,5 @@ main(){
 /*
 5 10
 -2 -1 -1 -1 1
-
 排完序后要拿肯定是拿连续一段
 */
