@@ -1,0 +1,1 @@
+{"name":"Local: meirin","url":"e:\\Codes\\Contest\\11.15 NOIP2023 32\\B meirin\\meirin.cpp","tests":[{"id":1700018378770,"input":"6 6\n1 1 4 5 1 4\n1 9 1 9 8 1\n1 6 0\n1 1 4\n1 5 4\n4 6 2\n1 6 -3\n1 6 -20","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Codes\\Contest\\11.15 NOIP2023 32\\B meirin\\meirin.cpp","group":"local","local":true}
